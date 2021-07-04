@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4</title>
+</head>
+<body>
+    <script>
+        var tv = 1000
+        var div3 = Number.parseInt((tv/100*10)+tv/3)
+        var tot3 = (tv/100*10)+tv
+        var div5 = Number.parseInt((tv/100*20)+tv/5)
+        var tot5 = (tv/100*20)+tv
+
+        window.alert('Aproveite a promoção! TV 21 polegadas')
+        window.alert('Preço à vista R$ 1.000')
+        window.alert('Para pagamento parcelado, simule em 3 ou 5 vezes:')
+        var bt = window.prompt('Digite a quantidade de parcelas')
+
+        if (bt==3) {
+        alert(`Plano escolhido de 3x de R$ ${div3} no total de R$ ${tot3}`)
+    }        
+        else{
+        if(bt==5)
+        alert(`Plano escolhido de 5x de R$ ${div5} no total de R$ ${tot5}`)
+
+    }
+    </script>
+</body>
+</html>

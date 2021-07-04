@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 5</title>
+</head>
+<body>
+    <script>
+       var nome = window.prompt('Nome do(a) aluno(a)');
+       var n1 = Number.parseFloat(window.prompt('Nota 1'));
+       var n2 = Number.parseFloat(window.prompt('Nota 2'));
+       var n3 = Number.parseFloat(window.prompt('Nota 3'));
+       var media = Number.parseFloat(n1+n2+n3)/3;
+
+       if(media >= 8.0)
+       window.alert(`O(A) aluno(a) ${nome} teve média ${media} e foi aprovado(a)`);
+
+       else
+       window.alert(`O(A) aluno(a) ${nome} teve média ${media} e foi reprovado(a)`);
+       
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 9</title>
+</head>
+<body>
+    <h2>Calculadora</h2>
+Primeiro número <input type="text" id="prim" value="" /> <br/>
+Segundo número <input type="text" id="segm" value="" /> <br/>
+Resultado <input type="text" id="resu" value="" /> <br/>
+<input type="button" id="botao_mais" value="+" /> <br/>
+<!--<input type="button" id="botao-" value="-" /> <br/>
+<input type="button" id="botao*" value="*" /> <br/>
+<input type="button" id="botao/" value="/" /> <br/> -->
+
+    <script>
+         window.onload = function(){
+        var btn = document.getElementById("botao_mais");
+        btn.onclick = function (){
+            var primeiro = document.getElementById("prim").value;
+            var segundo = document.getElementById("segm").value;
+            var pn = parseFloat(primeiro);
+            var sn = parseFloat(segundo);
+            conta_mais(parseInt(pn.value),
+           parseInt(sn.value));
+        }
+    }
+
+function conta_mais(pn, sn){
+  var total_soma;
+  if (pn > 0){
+    total_soma = pn+sn;
+  }
+  else{
+    alert("Digite um valor válido")
+  }
+  document.getElementById("resu").value = total_soma;
+}
+
+    </script>
+</body>
+</html>
